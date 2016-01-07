@@ -3,6 +3,9 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# Custom files
+*.tkn
+
 # C extensions
 *.so
 
