@@ -1,4 +1,3 @@
-#!c:/Users/RYAN/Anaconda/python.exe
 import sys
 from json import loads
 from shapely.geometry import Point, mapping
