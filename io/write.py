@@ -16,15 +16,15 @@ def write_shapefile(the_points):
     
                         'properties': { 
                         
-                            'elevation': 'str',
-                            'mindate': 'str', 
-                            'maxdate': 'str', 
-                            'latitude': 'str', 
-                            'name': 'str', 
-                            'datacoverage': 'str',
-                            'id': 'str',
-                            'elevationUnit': 'str',
-                            'longitude': 'str',
+                            'ELEV': 'str',
+                            'MINDATE': 'str', 
+                            'MAXDATE': 'str', 
+                            'LAT': 'str', 
+                            'STANAME': 'str', 
+                            'PCTCOV': 'str',
+                            'STAID': 'str',
+                            'ELEVUNIT': 'str',
+                            'LNG': 'str',
                         } 
                         
                     }
@@ -38,15 +38,15 @@ def write_shapefile(the_points):
             output.write({
                 
                 'properties': {
-                    'elevation':  record['elevation'], 
-                    'mindate': record['mindate'], 
-                    'maxdate': record['maxdate'], 
-                    'latitude': record['latitude'], 
-                    'name': record['name'], 
-                    'datacoverage': record['datacoverage'], 
-                    'id': record['id'], 
-                    'elevationUnit': record['elevationUnit'], 
-                    'longitude': record['longitude']
+                    'ELEV':  record['elevation'], 
+                    'MINDATE': record['mindate'], 
+                    'MAXDATE': record['maxdate'], 
+                    'LAT': record['latitude'], 
+                    'STANAME': record['name'], 
+                    'PCTCOV': record['datacoverage'], 
+                    'STAID': record['id'], 
+                    'ELEVUNIT': record['elevationUnit'], 
+                    'LNG': record['longitude']
                 },
             
                 'geometry': mapping(point)
