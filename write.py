@@ -26,11 +26,11 @@ def write_shapefile(the_points):
                             'elevationUnit': 'str',
                             'longitude': 'str',
                         } 
-                            
+                        
                     }
-
+    
     #
-    with collection('some.shp', 'w', driver='ESRI Shapefile', schema=station_schema, crs=from_epsg(3857)) as output:
+    with collection('some.shp', 'w', driver='ESRI Shapefile', schema=station_schema, crs=from_epsg(4326)) as output:
         for record in the_points_parsed:
             
             #
