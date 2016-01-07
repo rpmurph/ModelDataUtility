@@ -1,0 +1,14 @@
+[general]
+name=Model Data Utility
+description=To be written
+about=To be written
+category=Plugins
+version=0.1
+experimental=True
+qgisMinimumVersion=2.0
+author=Ryan Murphy
+email=ccrook@linz.govt.nz
+homepage=https://github.com/rpmurph/ModelDataUtility
+tracker=https://github.com/rpmurph/ModelDataUtility/issues
+repository=https://github.com/rpmurph/ModelDataUtility
+icon=./icon.png
