@@ -1,6 +1,4 @@
-import os
-import sys
-import requests
+from requests import get
 
 token = 'kRLKxqYZQangpfoIdxleMkHfINRvCXdC'
 url = r"http://www.ncdc.noaa.gov/cdo-web/api/v2/stations"
@@ -21,5 +19,5 @@ def make_request():
     payload = { 'extent' : '17.5000,-65.1000,18.5000,-64.1000', 'limit': 100, 'datasetid': 'GHCND'}
     
     #
-    r = requests.get(url, headers=header, params=payload)
+    r = get(url, headers=header, params=payload)
     return r.text

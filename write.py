@@ -1,6 +1,6 @@
 #!c:/Users/RYAN/Anaconda/python.exe
 import sys
-import json
+from json import loads
 from shapely.geometry import Point, mapping
 from fiona import collection
 from fiona.crs import from_epsg
